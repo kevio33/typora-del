@@ -1,7 +1,9 @@
 {
-  "java.project.referencedLibraries": [
-    "lib/**/*.jar",
-    "d:\\vs-code-code\\libraries\\commons-io-2.16.1\\commons-io-2.16.1.jar",
-    "d:\\vs-code-code\\libraries\\commons-lang3-3.12.0.jar"
-  ]
+  "java.project.referencedLibraries": {
+    "include": [
+      "lib/*.jar",
+      "d:\\vs-code-code\\libraries\\commons-io-2.16.1\\commons-io-2.16.1.jar"
+    ],
+    
+  }
 }
