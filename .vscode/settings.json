@@ -1,9 +1,0 @@
-{
-  "java.project.referencedLibraries": {
-    "include": [
-      "lib/*.jar",
-      "d:\\vs-code-code\\libraries\\commons-io-2.16.1\\commons-io-2.16.1.jar"
-    ],
-    
-  }
-}
