@@ -5,6 +5,7 @@ package src;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -45,18 +46,18 @@ public class TyporaDelMulti {
                 System.out.println("处理完毕：一共处理文件"+count+"个。详情请看log日志");
                 System.out.println("-------------------------------------------------------------");
 
-                File fileLog = new File(file.getAbsolutePath()+"/"+"delete_log.log");//打印日志
-                BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(fileLog));
-                byte[] bytes = stringBuffer.toString().getBytes();
-                bufferedOutputStream.write(bytes);
-                bufferedOutputStream.flush();
-                bufferedOutputStream.close();
+                File fileLog = new File(file.getAbsolutePath()+"/"+"delete_log.log");
+                try (BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(
+                        new FileOutputStream(fileLog))) {
+                    byte[] bytes = stringBuffer.toString().getBytes();
+                    bufferedOutputStream.write(bytes);
+                }
             }else{
                 System.out.println("输入路径不是一个目录");
             }
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 

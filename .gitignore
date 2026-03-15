@@ -1,4 +1,48 @@
+# IDE
 .idea/
-.vscode
-lib
-out
+.vscode/
+*.iml
+.trae/
+
+# Build outputs
+lib/
+out/
+target/
+build/
+dist/
+*.class
+*.pyc
+__pycache__/
+
+# Logs
+*.log
+logs/
+src-py/log/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+*.pyo
+*.pyd
+*.pyi
+.env
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+coverage/
+
+# Temporary and backup files
+*.tmp
+*.bak
+*.swp
+*~
+*.orig
+
+# Build artifacts
+*.jar
+MANIFEST.MF

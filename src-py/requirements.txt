@@ -1,0 +1,25 @@
+# Typora-Del Python 版本依赖
+# ==========================
+# 
+# 运行环境要求:
+# - Python 3.6+
+# - 标准库：pathlib, re, typing, logging, datetime
+#
+# 额外依赖（增强功能）:
+# - tqdm: 进度条显示
+# - colorama: 彩色控制台输出
+#
+# 安装依赖:
+# pip install -r requirements.txt
+#
+# 使用方法:
+# 1. 确保已安装 Python 3.6 或更高版本
+# 2. 打开命令行，进入 src-py 目录
+# 3. 安装依赖：pip install -r requirements.txt
+# 4. 运行:
+#    python typora_del_unified.py <path>    # 推荐：统一入口（增强版）
+#    python typora_del.py                   # 单文件版本（向后兼容）
+#    python typora_del_multi.py             # 多文件版本（向后兼容）
+#
+# 验证 Python 版本:
+# python --version
